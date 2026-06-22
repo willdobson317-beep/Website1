@@ -1,0 +1,1944 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dobson Homes – Guaranteed Rent for Landlords in Lincolnshire & Nottinghamshire</title>
+<meta name="description" content="Dobson Homes pays your rent every month, guaranteed. No voids, no tenants, no stress. Long-term 3–5 year agreements for landlords across Lincolnshire and Nottinghamshire.">
+<meta name="keywords" content="guaranteed rent Lincolnshire, guaranteed rent Nottinghamshire, rent to rent company, long-term property leasing, serviced accommodation operator, hands-off landlord">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --navy: #0D1B2A;
+    --navy-mid: #1A2E42;
+    --navy-light: #243D54;
+    --gold: #C49A3C;
+    --gold-light: #D4AE5C;
+    --gold-pale: #F5EDD8;
+    --slate: #4A5568;
+    --slate-light: #718096;
+    --off-white: #F8F7F4;
+    --white: #FFFFFF;
+    --border: rgba(0,0,0,0.08);
+    --border-dark: rgba(255,255,255,0.12);
+    --text-dark: #0D1B2A;
+    --text-mid: #4A5568;
+    --text-light: #718096;
+    --success: #2D6A4F;
+    --success-bg: #E8F5EE;
+    --font-display: 'Sora', sans-serif;
+    --font-body: 'Inter', sans-serif;
+    --radius-sm: 6px;
+    --radius-md: 12px;
+    --radius-lg: 20px;
+    --radius-xl: 32px;
+    --shadow-card: 0 2px 16px rgba(13,27,42,0.08);
+    --shadow-elevated: 0 8px 40px rgba(13,27,42,0.14);
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--font-body);
+    color: var(--text-dark);
+    background: var(--white);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ── TYPOGRAPHY ── */
+  h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 600; line-height: 1.2; }
+  h1 { font-size: clamp(2.2rem, 5vw, 3.6rem); }
+  h2 { font-size: clamp(1.8rem, 3.5vw, 2.6rem); }
+  h3 { font-size: clamp(1.2rem, 2vw, 1.5rem); }
+  p { color: var(--text-mid); line-height: 1.75; }
+
+  .eyebrow {
+    font-family: var(--font-display);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--gold);
+    display: block;
+    margin-bottom: 0.75rem;
+  }
+
+  /* ── LAYOUT ── */
+  .container { max-width: 1140px; margin: 0 auto; padding: 0 1.5rem; }
+  .container-narrow { max-width: 720px; margin: 0 auto; padding: 0 1.5rem; }
+  section { padding: 5rem 0; }
+
+  /* ── BUTTONS ── */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--font-display);
+    font-size: 0.95rem;
+    font-weight: 600;
+    padding: 0.85rem 1.8rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+  }
+  .btn-primary {
+    background: var(--gold);
+    color: var(--navy);
+  }
+  .btn-primary:hover { background: var(--gold-light); transform: translateY(-1px); }
+  .btn-outline {
+    background: transparent;
+    color: var(--white);
+    border: 1.5px solid rgba(255,255,255,0.4);
+  }
+  .btn-outline:hover { border-color: var(--gold); color: var(--gold); }
+  .btn-dark {
+    background: var(--navy);
+    color: var(--white);
+  }
+  .btn-dark:hover { background: var(--navy-mid); transform: translateY(-1px); }
+  .btn-whatsapp {
+    background: #25D366;
+    color: var(--white);
+  }
+  .btn-whatsapp:hover { background: #20BA5A; transform: translateY(-1px); }
+
+  /* ── NAV ── */
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--navy);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .nav-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+  .nav-logo {
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--white);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .nav-logo span { color: var(--gold); }
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+  }
+  .nav-links a {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: rgba(255,255,255,0.75);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--gold); }
+  .nav-cta { display: flex; gap: 0.75rem; align-items: center; }
+
+  .nav-mobile-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+    padding: 4px;
+  }
+  .nav-mobile-toggle span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--white);
+    border-radius: 2px;
+  }
+
+  .mobile-menu {
+    display: none;
+    background: var(--navy-mid);
+    border-top: 1px solid rgba(255,255,255,0.08);
+    padding: 1.5rem;
+  }
+  .mobile-menu.open { display: block; }
+  .mobile-menu a {
+    display: block;
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .mobile-menu a:last-child { border-bottom: none; }
+  .mobile-menu .btn { margin-top: 1rem; width: 100%; justify-content: center; }
+
+  /* ── TOP BAR ── */
+  .top-bar {
+    background: var(--gold);
+    color: var(--navy);
+    text-align: center;
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 0.6rem 1rem;
+  }
+  .top-bar a { color: var(--navy); text-decoration: underline; }
+
+  /* ── HERO ── */
+  .hero {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 60%, #1A3A5C 100%);
+    padding: 6rem 0 5rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -20%;
+    right: -10%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(196,154,60,0.12) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .hero-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(196,154,60,0.15);
+    border: 1px solid rgba(196,154,60,0.3);
+    color: var(--gold-light);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0.4rem 0.9rem;
+    border-radius: 100px;
+    margin-bottom: 1.5rem;
+  }
+  .hero h1 {
+    color: var(--white);
+    margin-bottom: 1.25rem;
+  }
+  .hero h1 em {
+    font-style: normal;
+    color: var(--gold);
+  }
+  .hero-sub {
+    color: rgba(255,255,255,0.75);
+    font-size: 1.15rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+  }
+  .hero-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 2.5rem;
+  }
+  .hero-proof {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  .hero-proof-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: rgba(255,255,255,0.65);
+    font-size: 0.85rem;
+  }
+  .hero-proof-item svg { color: var(--gold); flex-shrink: 0; }
+
+  .hero-card-wrap {
+    display: flex;
+    justify-content: center;
+  }
+  .hero-card {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    padding: 2.5rem;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: var(--shadow-elevated);
+  }
+  .hero-card-title {
+    font-family: var(--font-display);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .hero-form-group { margin-bottom: 1rem; }
+  .hero-form-group label {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text-mid);
+    margin-bottom: 0.35rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  .hero-form-group input,
+  .hero-form-group select,
+  .hero-form-group textarea {
+    width: 100%;
+    padding: 0.7rem 0.9rem;
+    border: 1.5px solid var(--border);
+    border-radius: var(--radius-sm);
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    color: var(--text-dark);
+    background: var(--off-white);
+    transition: border-color 0.2s;
+    outline: none;
+  }
+  .hero-form-group input:focus,
+  .hero-form-group select:focus,
+  .hero-form-group textarea:focus {
+    border-color: var(--gold);
+    background: var(--white);
+  }
+  .hero-form-group textarea { resize: vertical; min-height: 80px; }
+  .form-submit {
+    width: 100%;
+    margin-top: 0.5rem;
+    justify-content: center;
+    font-size: 1rem;
+    padding: 1rem;
+  }
+  .form-disclaimer {
+    font-size: 0.75rem;
+    color: var(--text-light);
+    text-align: center;
+    margin-top: 0.75rem;
+  }
+
+  /* ── TRUST BAR ── */
+  .trust-bar {
+    background: var(--off-white);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    padding: 1.5rem 0;
+  }
+  .trust-bar-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+  }
+  .trust-item {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--slate);
+  }
+  .trust-icon {
+    width: 32px;
+    height: 32px;
+    background: var(--navy);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--gold);
+    font-size: 0.9rem;
+    flex-shrink: 0;
+  }
+
+  /* ── VALUE PROPS ── */
+  .value-props { background: var(--white); }
+  .section-header { text-align: center; margin-bottom: 3.5rem; }
+  .section-header h2 { margin-bottom: 1rem; }
+  .section-header p { max-width: 540px; margin: 0 auto; font-size: 1.05rem; }
+
+  .props-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+  .prop-card {
+    background: var(--off-white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 2rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .prop-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-card);
+  }
+  .prop-icon {
+    width: 48px;
+    height: 48px;
+    background: var(--navy);
+    border-radius: var(--radius-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--gold);
+    margin-bottom: 1.25rem;
+    font-size: 1.3rem;
+  }
+  .prop-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.6rem;
+    color: var(--navy);
+  }
+  .prop-card p { font-size: 0.95rem; color: var(--text-mid); }
+
+  /* ── HOW IT WORKS ── */
+  .how-it-works { background: var(--navy); }
+  .how-it-works .section-header h2 { color: var(--white); }
+  .how-it-works .section-header p { color: rgba(255,255,255,0.65); }
+  .how-it-works .eyebrow { color: var(--gold); }
+
+  .steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1px;
+    background: rgba(255,255,255,0.1);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    margin-bottom: 3rem;
+  }
+  .step-item {
+    background: var(--navy);
+    padding: 2.5rem 1.75rem;
+    position: relative;
+  }
+  .step-number {
+    font-family: var(--font-display);
+    font-size: 3rem;
+    font-weight: 700;
+    color: rgba(196,154,60,0.2);
+    line-height: 1;
+    margin-bottom: 1rem;
+  }
+  .step-item h3 { color: var(--white); font-size: 1.1rem; margin-bottom: 0.75rem; }
+  .step-item p { color: rgba(255,255,255,0.6); font-size: 0.9rem; line-height: 1.6; }
+
+  .how-cta {
+    text-align: center;
+    padding-top: 1rem;
+  }
+  .how-cta p { color: rgba(255,255,255,0.6); margin-top: 1rem; font-size: 0.9rem; }
+
+  /* ── GUARANTEED RENT ── */
+  .guaranteed-rent { background: var(--off-white); }
+  .guarantee-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+  }
+  .guarantee-list { list-style: none; margin-top: 1.5rem; }
+  .guarantee-list li {
+    display: flex;
+    gap: 0.75rem;
+    align-items: flex-start;
+    padding: 0.85rem 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.95rem;
+    color: var(--text-mid);
+  }
+  .guarantee-list li:last-child { border-bottom: none; }
+  .check-icon {
+    width: 20px;
+    height: 20px;
+    background: var(--success-bg);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 1px;
+    color: var(--success);
+    font-size: 0.7rem;
+    font-weight: 700;
+  }
+
+  .guarantee-stat-card {
+    background: var(--navy);
+    border-radius: var(--radius-lg);
+    padding: 2.5rem;
+    color: var(--white);
+    margin-bottom: 1.5rem;
+  }
+  .stat-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .stat-item { text-align: center; }
+  .stat-number {
+    font-family: var(--font-display);
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--gold);
+    line-height: 1;
+    display: block;
+  }
+  .stat-label {
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.6);
+    margin-top: 0.35rem;
+  }
+  .stat-divider {
+    height: 1px;
+    background: rgba(255,255,255,0.1);
+    margin: 1.5rem 0;
+  }
+  .guarantee-promise {
+    font-size: 1.05rem;
+    color: rgba(255,255,255,0.85);
+    line-height: 1.6;
+    font-style: italic;
+  }
+
+  .guarantee-cta-card {
+    background: var(--gold-pale);
+    border: 1.5px solid rgba(196,154,60,0.3);
+    border-radius: var(--radius-md);
+    padding: 2rem;
+  }
+  .guarantee-cta-card h3 { color: var(--navy); font-size: 1.1rem; margin-bottom: 0.5rem; }
+  .guarantee-cta-card p { font-size: 0.9rem; margin-bottom: 1rem; }
+
+  /* ── COMPLIANCE LEAD MAGNET ── */
+  .lead-magnet {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%);
+    padding: 4rem 0;
+  }
+  .lead-magnet-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+  }
+  .lead-magnet h2 { color: var(--white); }
+  .lead-magnet .eyebrow { color: var(--gold); }
+  .lead-magnet p { color: rgba(255,255,255,0.7); margin-top: 1rem; }
+  .checklist-preview {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: var(--radius-md);
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  .checklist-preview-item {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.5rem 0;
+    color: rgba(255,255,255,0.75);
+    font-size: 0.9rem;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+  .checklist-preview-item:last-child { border-bottom: none; }
+  .check-gold { color: var(--gold); font-weight: 700; }
+
+  .lm-form {
+    background: var(--white);
+    border-radius: var(--radius-md);
+    padding: 2.5rem;
+  }
+  .lm-form h3 { color: var(--navy); font-size: 1.2rem; margin-bottom: 0.5rem; }
+  .lm-form p { font-size: 0.9rem; margin-bottom: 1.5rem; }
+  .lm-form .hero-form-group input { background: var(--off-white); }
+
+  /* ── WHAT WE MANAGE ── */
+  .what-we-manage { background: var(--white); }
+  .manage-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem;
+  }
+  .manage-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding: 1.25rem;
+    background: var(--off-white);
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border);
+  }
+  .manage-bullet {
+    width: 8px;
+    height: 8px;
+    background: var(--gold);
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-top: 6px;
+  }
+  .manage-item strong { display: block; color: var(--navy); font-weight: 600; font-size: 0.95rem; }
+  .manage-item span { color: var(--text-mid); font-size: 0.85rem; }
+
+  /* ── FAQ ── */
+  .faq { background: var(--off-white); }
+  .faq-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 2.5rem;
+  }
+  .faq-item {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+  }
+  .faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 1.25rem 1.5rem;
+    text-align: left;
+    font-family: var(--font-display);
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--navy);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    transition: background 0.2s;
+  }
+  .faq-question:hover { background: var(--off-white); }
+  .faq-arrow {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--off-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: transform 0.2s, background 0.2s;
+    font-size: 0.75rem;
+    color: var(--text-mid);
+  }
+  .faq-item.open .faq-arrow {
+    transform: rotate(180deg);
+    background: var(--gold);
+    color: var(--navy);
+  }
+  .faq-answer {
+    display: none;
+    padding: 0 1.5rem 1.25rem;
+    font-size: 0.9rem;
+    color: var(--text-mid);
+    line-height: 1.7;
+    border-top: 1px solid var(--border);
+    padding-top: 1rem;
+  }
+  .faq-item.open .faq-answer { display: block; }
+
+  /* ── ABOUT ── */
+  .about { background: var(--white); }
+  .about-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+  }
+  .about-visual {
+    background: var(--off-white);
+    border-radius: var(--radius-lg);
+    padding: 3rem;
+    text-align: center;
+  }
+  .about-avatar {
+    width: 80px;
+    height: 80px;
+    background: var(--navy);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-display);
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--gold);
+    margin: 0 auto 1rem;
+  }
+  .about-name {
+    font-family: var(--font-display);
+    font-weight: 600;
+    color: var(--navy);
+    font-size: 1.1rem;
+  }
+  .about-role { color: var(--text-light); font-size: 0.85rem; margin-bottom: 1.5rem; }
+  .about-creds {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    text-align: left;
+  }
+  .cred-item {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 0.85rem;
+    color: var(--text-mid);
+    font-weight: 500;
+  }
+  .cred-dot { width: 8px; height: 8px; background: var(--gold); border-radius: 50%; flex-shrink: 0; }
+  .about-content h2 { margin-bottom: 1.25rem; }
+  .about-content p { margin-bottom: 1rem; font-size: 0.975rem; }
+  .mission-box {
+    background: var(--gold-pale);
+    border-left: 4px solid var(--gold);
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    padding: 1.25rem 1.5rem;
+    margin-top: 1.5rem;
+    font-size: 0.95rem;
+    font-style: italic;
+    color: var(--navy);
+    font-weight: 500;
+  }
+
+  /* ── AREAS ── */
+  .areas { background: var(--navy); }
+  .areas .section-header h2 { color: var(--white); }
+  .areas .section-header p { color: rgba(255,255,255,0.6); }
+  .areas .eyebrow { color: var(--gold); }
+  .areas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .area-card {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: var(--radius-md);
+    padding: 2rem;
+  }
+  .area-card h3 { color: var(--white); margin-bottom: 0.5rem; }
+  .area-card p { color: rgba(255,255,255,0.55); font-size: 0.875rem; }
+  .area-badge {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--navy);
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 0.25rem 0.6rem;
+    border-radius: 4px;
+    margin-bottom: 0.75rem;
+  }
+  .area-badge.coming { background: rgba(196,154,60,0.2); color: var(--gold-light); }
+
+  /* ── CONTACT ── */
+  .contact { background: var(--off-white); }
+  .contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 4rem;
+    align-items: start;
+  }
+  .contact-info h2 { margin-bottom: 1rem; }
+  .contact-info p { margin-bottom: 2rem; font-size: 0.95rem; }
+  .contact-options { display: flex; flex-direction: column; gap: 1rem; }
+  .contact-option {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.25rem;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    text-decoration: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+  .contact-option:hover { border-color: var(--gold); box-shadow: var(--shadow-card); }
+  .contact-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: var(--radius-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+  }
+  .contact-icon.phone { background: var(--navy); color: var(--gold); }
+  .contact-icon.wa { background: #25D366; color: var(--white); }
+  .contact-icon.email { background: var(--off-white); color: var(--navy); border: 1px solid var(--border); }
+  .contact-option-text strong { display: block; color: var(--navy); font-size: 0.95rem; }
+  .contact-option-text span { color: var(--text-light); font-size: 0.85rem; }
+
+  .contact-form-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 2.5rem;
+    box-shadow: var(--shadow-card);
+  }
+  .contact-form-card h3 { color: var(--navy); margin-bottom: 0.5rem; font-size: 1.2rem; }
+  .contact-form-card > p { font-size: 0.9rem; margin-bottom: 1.75rem; }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--navy);
+    color: rgba(255,255,255,0.6);
+    padding: 3rem 0 2rem;
+  }
+  .footer-top {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 3rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    margin-bottom: 2rem;
+  }
+  .footer-brand {
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 1rem;
+  }
+  .footer-brand span { color: var(--gold); }
+  .footer-desc { font-size: 0.875rem; line-height: 1.7; max-width: 260px; }
+  .footer-col h4 {
+    font-family: var(--font-display);
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--white);
+    margin-bottom: 1rem;
+  }
+  .footer-col a {
+    display: block;
+    color: rgba(255,255,255,0.55);
+    text-decoration: none;
+    font-size: 0.875rem;
+    margin-bottom: 0.6rem;
+    transition: color 0.2s;
+  }
+  .footer-col a:hover { color: var(--gold); }
+  .footer-compliance {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1.25rem;
+  }
+  .compliance-badge {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 6px;
+    padding: 0.4rem 0.75rem;
+    font-size: 0.75rem;
+    color: rgba(255,255,255,0.6);
+    font-weight: 500;
+  }
+  .compliance-dot { width: 6px; height: 6px; background: var(--gold); border-radius: 50%; }
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .footer-bottom a { color: rgba(255,255,255,0.4); text-decoration: none; }
+  .footer-bottom a:hover { color: var(--gold); }
+
+  /* ── FLOATING WHATSAPP ── */
+  .floating-wa {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    z-index: 99;
+    width: 56px;
+    height: 56px;
+    background: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .floating-wa:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 28px rgba(37,211,102,0.5);
+  }
+  .floating-wa svg { width: 28px; height: 28px; }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 900px) {
+    .nav-links, .nav-cta { display: none; }
+    .nav-mobile-toggle { display: flex; }
+    .hero-inner, .guarantee-layout, .lead-magnet-inner,
+    .about-layout, .contact-layout, .faq-grid { grid-template-columns: 1fr; }
+    .hero { padding: 4rem 0 3rem; }
+    .hero-card-wrap { margin-top: 2rem; }
+    .footer-top { grid-template-columns: 1fr 1fr; gap: 2rem; }
+    .stat-row { grid-template-columns: 1fr 1fr; }
+    .form-row { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 600px) {
+    section { padding: 3.5rem 0; }
+    .footer-top { grid-template-columns: 1fr; }
+    .trust-bar-inner { gap: 1.25rem; }
+    .hero-actions { flex-direction: column; }
+    .hero-actions .btn { width: 100%; justify-content: center; }
+  }
+
+  /* ── PAGE SECTIONS (hidden/shown via JS) ── */
+  .page-section { display: none; }
+  .page-section.active { display: block; }
+  #home-page { display: block; }
+</style>
+</head>
+<body>
+
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/447700000000?text=Hi%20Dobson%20Homes%2C%20I%27d%20like%20to%20discuss%20a%20guaranteed%20rent%20agreement%20for%20my%20property." class="floating-wa" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+  </svg>
+</a>
+
+<!-- Top Bar -->
+<div class="top-bar">
+  📋 Free Download: <strong>Landlord Compliance Checklist 2024</strong> — <a href="#" onclick="showSection('checklist'); return false;">Get yours now</a>
+</div>
+
+<!-- Navigation -->
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="nav-logo" onclick="showSection('home'); return false;">
+      Dobson <span>Homes</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#" onclick="showSection('home'); return false;">Home</a></li>
+      <li><a href="#" onclick="showSection('guaranteed'); return false;">Guaranteed Rent</a></li>
+      <li><a href="#" onclick="showSection('howitworks'); return false;">How It Works</a></li>
+      <li><a href="#" onclick="showSection('about'); return false;">About</a></li>
+      <li><a href="#" onclick="showSection('faq'); return false;">FAQ</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="#" class="btn btn-outline" onclick="showSection('checklist'); return false;">Free Checklist</a>
+      <a href="#" class="btn btn-primary" onclick="showSection('contact'); return false;">Get a Quote</a>
+    </div>
+    <button class="nav-mobile-toggle" onclick="toggleMobile()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#" onclick="showSection('home'); toggleMobile(); return false;">Home</a>
+    <a href="#" onclick="showSection('guaranteed'); toggleMobile(); return false;">Guaranteed Rent</a>
+    <a href="#" onclick="showSection('howitworks'); toggleMobile(); return false;">How It Works</a>
+    <a href="#" onclick="showSection('about'); toggleMobile(); return false;">About</a>
+    <a href="#" onclick="showSection('faq'); toggleMobile(); return false;">FAQ</a>
+    <a href="#" onclick="showSection('checklist'); toggleMobile(); return false;">Free Checklist</a>
+    <a class="btn btn-primary" href="#" onclick="showSection('contact'); toggleMobile(); return false;">Get a Quote →</a>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- HOME PAGE                                               -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<div id="home-page" class="page-section active">
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          Guaranteed Rent – No Voids
+        </div>
+        <h1>Your rent arrives.<br>Every month.<br><em>Without fail.</em></h1>
+        <p class="hero-sub">Dobson Homes leases your property directly and pays you a guaranteed monthly income — whether we have guests or not. No tenant management, no void periods, no stress.</p>
+        <div class="hero-actions">
+          <a href="#" class="btn btn-primary" onclick="showSection('contact'); return false;">Request a Free Valuation →</a>
+          <a href="#" class="btn btn-outline" onclick="showSection('howitworks'); return false;">How It Works</a>
+        </div>
+        <div class="hero-proof">
+          <div class="hero-proof-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            3–5 year agreements
+          </div>
+          <div class="hero-proof-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            PRS Member
+          </div>
+          <div class="hero-proof-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            ICO Registered
+          </div>
+          <div class="hero-proof-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            Lincs & Notts
+          </div>
+        </div>
+      </div>
+      <div class="hero-card-wrap">
+        <div class="hero-card">
+          <p class="hero-card-title">Get your free guaranteed rent valuation</p>
+          <form onsubmit="handleFormSubmit(event, 'valuation')">
+            <div class="hero-form-group">
+              <label>Your name</label>
+              <input type="text" placeholder="John Smith" required>
+            </div>
+            <div class="hero-form-group">
+              <label>Phone number</label>
+              <input type="tel" placeholder="07700 000000" required>
+            </div>
+            <div class="hero-form-group">
+              <label>Email address</label>
+              <input type="email" placeholder="john@example.com" required>
+            </div>
+            <div class="hero-form-group">
+              <label>Property location</label>
+              <input type="text" placeholder="e.g. Lincoln, Newark, Nottingham">
+            </div>
+            <div class="hero-form-group">
+              <label>Number of bedrooms</label>
+              <select>
+                <option value="">Select...</option>
+                <option>Studio</option>
+                <option>1 bedroom</option>
+                <option>2 bedrooms</option>
+                <option>3 bedrooms</option>
+                <option>4+ bedrooms</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary form-submit">Request Free Valuation →</button>
+          </form>
+          <p class="form-disclaimer">No obligation. We'll respond within 2 hours during business hours.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Bar -->
+  <div class="trust-bar">
+    <div class="trust-bar-inner">
+      <div class="trust-item">
+        <div class="trust-icon">✓</div>
+        ICO Registered
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">⚖</div>
+        PRS Member
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">📋</div>
+        Written Agreements
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">🔒</div>
+        Compliance-Led
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">💷</div>
+        Monthly Payments
+      </div>
+    </div>
+  </div>
+
+  <!-- Value Props -->
+  <section class="value-props">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Why landlords choose us</span>
+        <h2>Property ownership without the pressure</h2>
+        <p>We take on the full responsibility of your property so you don't have to. No phone calls, no surprises, no void months.</p>
+      </div>
+      <div class="props-grid">
+        <div class="prop-card">
+          <div class="prop-icon">💷</div>
+          <h3>Guaranteed monthly rent</h3>
+          <p>We pay you on an agreed date every single month — regardless of occupancy. No chasing, no delays, no excuses.</p>
+        </div>
+        <div class="prop-card">
+          <div class="prop-icon">📅</div>
+          <h3>No void periods</h3>
+          <p>Because we lease your property directly, you earn income from day one of the agreement. Empty nights are our problem, not yours.</p>
+        </div>
+        <div class="prop-card">
+          <div class="prop-icon">🛡</div>
+          <h3>Professional property care</h3>
+          <p>Your property is cleaned and maintained to a high standard throughout the agreement. We protect your asset as if it were our own.</p>
+        </div>
+        <div class="prop-card">
+          <div class="prop-icon">📞</div>
+          <h3>No tenant management</h3>
+          <p>Late-night calls, disputes, and maintenance emergencies are handled entirely by us. You are genuinely uninvolved.</p>
+        </div>
+        <div class="prop-card">
+          <div class="prop-icon">📝</div>
+          <h3>Long-term agreements</h3>
+          <p>We commit to 3–5 year leases, giving you a predictable income stream and removing the uncertainty of annual tenancies.</p>
+        </div>
+        <div class="prop-card">
+          <div class="prop-icon">✅</div>
+          <h3>Full compliance management</h3>
+          <p>We ensure the property is compliant throughout the lease. Gas safety, EICRs, fire safety — all coordinated by us.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works (Mini) -->
+  <section class="how-it-works">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Simple process</span>
+        <h2>From enquiry to income in days</h2>
+        <p>Our process is straightforward. We move quickly, communicate clearly, and handle everything professionally.</p>
+      </div>
+      <div class="steps-grid">
+        <div class="step-item">
+          <div class="step-number">01</div>
+          <h3>Contact us</h3>
+          <p>Call, WhatsApp or complete our form. We'll get back to you within 2 hours during business hours.</p>
+        </div>
+        <div class="step-item">
+          <div class="step-number">02</div>
+          <h3>Property assessment</h3>
+          <p>We visit your property, discuss your goals, and provide a clear guaranteed rent offer in writing.</p>
+        </div>
+        <div class="step-item">
+          <div class="step-number">03</div>
+          <h3>Agreement signed</h3>
+          <p>Our solicitor-reviewed agreement is clear and fair. You know exactly what you're signing and why.</p>
+        </div>
+        <div class="step-item">
+          <div class="step-number">04</div>
+          <h3>Rent received</h3>
+          <p>Your first payment arrives on the agreed date. Every month after that, automatically — without you lifting a finger.</p>
+        </div>
+      </div>
+      <div class="how-cta">
+        <a href="#" class="btn btn-primary" onclick="showSection('contact'); return false;">Start the conversation →</a>
+        <p>No obligation. No pressure. Just a straightforward conversation about your property.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- What We Manage -->
+  <section class="what-we-manage">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Fully managed</span>
+        <h2>We handle everything. You handle nothing.</h2>
+        <p>Every aspect of your property's day-to-day management is handled entirely by Dobson Homes.</p>
+      </div>
+      <div class="manage-grid">
+        <div class="manage-item">
+          <div class="manage-bullet"></div>
+          <div><strong>Professional cleaning</strong><span>Regular deep cleans and changeover cleaning managed by our team</span></div>
+        </div>
+        <div class="manage-item">
+          <div class="manage-bullet"></div>
+          <div><strong>Maintenance coordination</strong><span>All repairs and maintenance handled and arranged by us</span></div>
+        </div>
+        <div class="manage-item">
+          <div class="manage-bullet"></div>
+          <div><strong>Gas safety certificates</strong><span>Annual checks arranged and certificates provided to you</span></div>
+        </div>
+        <div class="manage-item">
+          <div class="manage-bullet"></div>
+          <div><strong>Electrical inspections</strong><span>EICR coordination and compliance support throughout</span></div>
+        </div>
+        <div class="manage-item">
+          <div class="manage-bullet"></div>
+          <div><strong>Fire safety compliance</strong><span>Smoke alarms, CO detectors, and fire risk assessments</span></div>
+        </div>
+        <div class="manage-item">
+          <div class="manage-bullet"></div>
+          <div><strong>Light refurbishment</strong><span>We discuss and support improvements that protect property value</span></div>
+        </div>
+        <div class="manage-item">
+          <div class="manage-bullet"></div>
+          <div><strong>Utilities management</strong><span>We manage the utility accounts during the lease period</span></div>
+        </div>
+        <div class="manage-item">
+          <div class="manage-bullet"></div>
+          <div><strong>Out-of-hours response</strong><span>Any issues at the property are our responsibility, not yours</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lead Magnet -->
+  <section class="lead-magnet">
+    <div class="container">
+      <div class="lead-magnet-inner">
+        <div>
+          <span class="eyebrow">Free resource</span>
+          <h2>Is your rental property fully compliant?</h2>
+          <p>Many landlords don't realise they're missing key compliance certificates — and the penalties can be severe. We've created a free checklist to help you identify any gaps.</p>
+          <div class="checklist-preview">
+            <div class="checklist-preview-item"><span class="check-gold">✓</span> Gas safety certificate (annual)</div>
+            <div class="checklist-preview-item"><span class="check-gold">✓</span> Electrical Installation Condition Report (EICR)</div>
+            <div class="checklist-preview-item"><span class="check-gold">✓</span> Energy Performance Certificate (EPC)</div>
+            <div class="checklist-preview-item"><span class="check-gold">✓</span> Legionella risk assessment</div>
+            <div class="checklist-preview-item"><span class="check-gold">✓</span> Fire safety & CO alarm compliance</div>
+            <div class="checklist-preview-item" style="color: rgba(255,255,255,0.4); font-style: italic;">+ 12 more checks inside...</div>
+          </div>
+        </div>
+        <div class="lm-form">
+          <h3>Get your free compliance checklist</h3>
+          <p>Enter your details and we'll send it straight to your inbox.</p>
+          <form onsubmit="handleFormSubmit(event, 'checklist')">
+            <div class="hero-form-group">
+              <label>Your name</label>
+              <input type="text" placeholder="John Smith" required>
+            </div>
+            <div class="hero-form-group">
+              <label>Email address</label>
+              <input type="email" placeholder="john@example.com" required>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%; justify-content: center; padding: 0.9rem;">Send me the checklist →</button>
+          </form>
+          <p style="font-size: 0.75rem; color: #718096; margin-top: 0.75rem; text-align: center;">No spam. Unsubscribe at any time. ICO Registered.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Areas -->
+  <section class="areas">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Coverage</span>
+        <h2>Operating across the East Midlands</h2>
+        <p>Currently accepting properties across Lincolnshire and Nottinghamshire, with expansion planned for Yorkshire and beyond.</p>
+      </div>
+      <div class="areas-grid">
+        <div class="area-card">
+          <div class="area-badge">Now accepting</div>
+          <h3>Lincolnshire</h3>
+          <p>Lincoln, Grantham, Boston, Spalding, Sleaford, Skegness, Stamford, and surrounding areas.</p>
+        </div>
+        <div class="area-card">
+          <div class="area-badge">Now accepting</div>
+          <h3>Nottinghamshire</h3>
+          <p>Nottingham, Newark-on-Trent, Mansfield, Worksop, Retford, and surrounding areas.</p>
+        </div>
+        <div class="area-card">
+          <div class="area-badge coming">Coming soon</div>
+          <h3>Yorkshire</h3>
+          <p>We're expanding into Yorkshire. Register your interest now and be first in line.</p>
+        </div>
+        <div class="area-card">
+          <div class="area-badge coming">Planned expansion</div>
+          <h3>Nationwide</h3>
+          <p>Our long-term plan is to serve landlords right across the UK. Join our waitlist.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section style="background: var(--gold-pale); padding: 5rem 0;">
+    <div class="container-narrow" style="text-align: center;">
+      <span class="eyebrow">Ready to get started?</span>
+      <h2 style="margin-bottom: 1rem;">Stop managing. Start earning.</h2>
+      <p style="font-size: 1.05rem; max-width: 480px; margin: 0 auto 2rem;">Talk to us today about your property. We'll give you a clear, no-obligation guaranteed rent offer — usually within 48 hours.</p>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="#" class="btn btn-dark" onclick="showSection('contact'); return false;">Request a free valuation →</a>
+        <a href="https://wa.me/447700000000?text=Hi%20Dobson%20Homes%2C%20I%27d%20like%20to%20discuss%20my%20property." class="btn btn-whatsapp" target="_blank">💬 WhatsApp us now</a>
+      </div>
+    </div>
+  </section>
+
+</div><!-- /home-page -->
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- GUARANTEED RENT PAGE                                     -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<div id="guaranteed-page" class="page-section">
+
+  <!-- Hero -->
+  <section class="hero" style="padding: 5rem 0;">
+    <div class="container-narrow" style="text-align: center;">
+      <span class="eyebrow">Guaranteed Rent</span>
+      <h1 style="color: var(--white); margin-bottom: 1.25rem;">Your rent. Guaranteed.<br>Every single month.</h1>
+      <p class="hero-sub" style="max-width: 560px; margin: 0 auto 2rem;">Dobson Homes enters into a long-term lease agreement with you. We become your sole tenant — and we pay your rent, on time, every month, regardless of whether we have guests staying or not.</p>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="#" class="btn btn-primary" onclick="showSection('contact'); return false;">Get your free offer →</a>
+        <a href="https://wa.me/447700000000" class="btn btn-outline" target="_blank">WhatsApp us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- How the model works -->
+  <section style="background: var(--white);">
+    <div class="container">
+      <div class="guarantee-layout">
+        <div>
+          <span class="eyebrow">The guaranteed rent model</span>
+          <h2>We are your tenant.<br>You are never without rent.</h2>
+          <p>Unlike a traditional letting agent who simply finds tenants for you, Dobson Homes becomes your tenant directly. We sign a long-term lease agreement with you and take full responsibility for the property.</p>
+          <p style="margin-top: 1rem;">We then operate the property as serviced accommodation — hosting business travellers, contractors, and short-stay guests. The income we generate from guests is entirely our concern. Your income is fixed, agreed, and guaranteed.</p>
+          <ul class="guarantee-list">
+            <li><div class="check-icon">✓</div> Fixed monthly rent agreed upfront — no surprises</li>
+            <li><div class="check-icon">✓</div> Paid on the same date every month without fail</li>
+            <li><div class="check-icon">✓</div> Paid whether the property is occupied or empty</li>
+            <li><div class="check-icon">✓</div> No deductions, no management fees, no hidden charges</li>
+            <li><div class="check-icon">✓</div> 3–5 year agreement for long-term income certainty</li>
+            <li><div class="check-icon">✓</div> Written, solicitor-reviewed contract provided</li>
+            <li><div class="check-icon">✓</div> Clear break clauses and exit procedures</li>
+          </ul>
+        </div>
+        <div>
+          <div class="guarantee-stat-card">
+            <div class="stat-row">
+              <div class="stat-item">
+                <span class="stat-number">£0</span>
+                <div class="stat-label">Void period losses</div>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">£0</span>
+                <div class="stat-label">Management fees</div>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">3–5</span>
+                <div class="stat-label">Year agreements</div>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">24/7</span>
+                <div class="stat-label">We handle issues</div>
+              </div>
+            </div>
+            <div class="stat-divider"></div>
+            <p class="guarantee-promise">"We pay you every month. Not when guests are in. Every month."</p>
+          </div>
+          <div class="guarantee-cta-card">
+            <h3>How much could you earn?</h3>
+            <p>Request a no-obligation valuation and we'll tell you exactly what guaranteed rent we'd offer for your property.</p>
+            <a href="#" class="btn btn-dark" onclick="showSection('contact'); return false;" style="width: 100%; justify-content: center;">Get a free valuation →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What this means for you -->
+  <section style="background: var(--off-white);">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">What this means for you</span>
+        <h2>The problems we solve for landlords</h2>
+        <p>Every pain point of traditional property management is addressed by our model.</p>
+      </div>
+      <div class="props-grid">
+        <div class="prop-card">
+          <div class="prop-icon">📉</div>
+          <h3>No more void periods</h3>
+          <p>Traditional landlords lose significant income to void months. Our model means you earn from day one and every month until the agreement ends.</p>
+        </div>
+        <div class="prop-card">
+          <div class="prop-icon">🚫</div>
+          <h3>No tenant management</h3>
+          <p>We are your only tenant. No referencing, no disputes, no rent arrears, no eviction procedures. That relationship ends the moment you sign with us.</p>
+        </div>
+        <div class="prop-card">
+          <div class="prop-icon">🔧</div>
+          <h3>Maintenance handled</h3>
+          <p>Maintenance calls, contractor coordination, and repair costs are managed by us. You are kept informed where required but never burdened.</p>
+        </div>
+        <div class="prop-card">
+          <div class="prop-icon">📞</div>
+          <h3>No out-of-hours calls</h3>
+          <p>Your phone stays silent. Any property issues — at any hour — are managed directly by our team. Your evenings and weekends are your own.</p>
+        </div>
+        <div class="prop-card">
+          <div class="prop-icon">🧹</div>
+          <h3>Professional cleaning</h3>
+          <p>The property is cleaned professionally and regularly throughout the agreement. When the lease ends, you receive your property back in excellent condition.</p>
+        </div>
+        <div class="prop-card">
+          <div class="prop-icon">📊</div>
+          <h3>Predictable income for tax planning</h3>
+          <p>Knowing your income to the penny every month makes financial planning significantly simpler — whether that's mortgages, tax returns, or investment decisions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Objections -->
+  <section style="background: var(--white);">
+    <div class="container-narrow">
+      <div class="section-header">
+        <span class="eyebrow">Common questions & concerns</span>
+        <h2>What landlords ask us most</h2>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 1rem; margin-top: 2rem;">
+        <div class="faq-item open">
+          <button class="faq-question" onclick="toggleFaq(this)">Will I receive less rent than I would with a normal tenant? <span class="faq-arrow">▾</span></button>
+          <div class="faq-answer">In most cases, our guaranteed rent offer is slightly below market rate — because you're gaining something valuable in return: certainty. No voids, no arrears, no management headaches. Many landlords find that when they calculate the true cost of void periods, late payments, and management fees on a traditional tenancy, our guaranteed income often works out to be the same or more in practice. And the peace of mind is priceless.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">Is my property protected during the agreement? <span class="faq-arrow">▾</span></button>
+          <div class="faq-answer">Yes. We operate your property to a high standard and are motivated to maintain it well — our guests expect quality. Properties are professionally cleaned regularly, and we handle and coordinate any maintenance. We treat your property as a long-term asset, not a short-term opportunity.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">What happens if something breaks? <span class="faq-arrow">▾</span></button>
+          <div class="faq-answer">We handle it. Minor maintenance and general wear and tear are managed and coordinated by us. Structural or major works that fall under landlord obligation are discussed with you directly, and we always provide clear communication rather than silent invoicing.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">What type of people stay in my property? <span class="faq-arrow">▾</span></button>
+          <div class="faq-answer">We operate your property as professional serviced accommodation, hosting business travellers, contractors, medical professionals, and corporate guests. These guests tend to treat properties with greater care than residential tenants and are vetted through the platforms we use.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">What if I want to sell during the agreement? <span class="faq-arrow">▾</span></button>
+          <div class="faq-answer">Our agreements include clear break clauses which we discuss openly before signing. We are not in the business of trapping landlords — we want long-term relationships based on mutual benefit. If your circumstances change, we'll work with you.</div>
+        </div>
+      </div>
+      <div style="text-align: center; margin-top: 2.5rem;">
+        <p style="margin-bottom: 1.25rem;">Ready to discuss your property?</p>
+        <a href="#" class="btn btn-primary" onclick="showSection('contact'); return false;">Request a free guaranteed rent valuation →</a>
+      </div>
+    </div>
+  </section>
+
+</div><!-- /guaranteed-page -->
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- HOW IT WORKS PAGE                                        -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<div id="howitworks-page" class="page-section">
+  <section class="hero" style="padding: 5rem 0;">
+    <div class="container-narrow" style="text-align: center;">
+      <span class="eyebrow">Process</span>
+      <h1 style="color: var(--white); margin-bottom: 1rem;">From enquiry to income in four straightforward steps</h1>
+      <p class="hero-sub" style="max-width: 520px; margin: 0 auto;">We've built our process to be fast, clear, and completely hassle-free for landlords. Most agreements are agreed within a week of first contact.</p>
+    </div>
+  </section>
+  <section style="background: var(--white);">
+    <div class="container-narrow">
+      <div style="display: flex; flex-direction: column; gap: 3rem; margin-top: 1rem;">
+        <div style="display: grid; grid-template-columns: 80px 1fr; gap: 2rem; align-items: start;">
+          <div style="text-align: center;">
+            <div style="width: 64px; height: 64px; background: var(--navy); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; color: var(--gold);">1</div>
+          </div>
+          <div>
+            <h3 style="margin-bottom: 0.75rem;">Get in touch</h3>
+            <p>Contact us by phone, WhatsApp, or our enquiry form. There's no obligation and no pressure. We'll have a quick conversation about your property and goals, and answer any questions you have about how the model works.</p>
+            <div style="margin-top: 1rem; display: flex; gap: 0.75rem; flex-wrap: wrap;">
+              <a href="tel:+447700000000" class="btn btn-dark" style="font-size: 0.875rem; padding: 0.65rem 1.25rem;">📞 Call us</a>
+              <a href="https://wa.me/447700000000" class="btn btn-whatsapp" style="font-size: 0.875rem; padding: 0.65rem 1.25rem;" target="_blank">💬 WhatsApp</a>
+            </div>
+          </div>
+        </div>
+        <div style="display: grid; grid-template-columns: 80px 1fr; gap: 2rem; align-items: start;">
+          <div style="text-align: center;">
+            <div style="width: 64px; height: 64px; background: var(--navy); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; color: var(--gold);">2</div>
+          </div>
+          <div>
+            <h3 style="margin-bottom: 0.75rem;">Property visit and offer</h3>
+            <p>We visit your property at a time that suits you. We assess the condition, location, and type of property, and discuss any light preparation that might be needed. We then provide a written guaranteed rent offer — usually within 24–48 hours.</p>
+            <p style="margin-top: 0.75rem;">Our offer is transparent. We explain how we arrived at the figure and what the agreement includes. There are no hidden charges and no management fees deducted from your rent.</p>
+          </div>
+        </div>
+        <div style="display: grid; grid-template-columns: 80px 1fr; gap: 2rem; align-items: start;">
+          <div style="text-align: center;">
+            <div style="width: 64px; height: 64px; background: var(--navy); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; color: var(--gold);">3</div>
+          </div>
+          <div>
+            <h3 style="margin-bottom: 0.75rem;">Agreement signed</h3>
+            <p>If you're happy with our offer, we proceed to agreement. We use a professionally drafted lease agreement that protects both parties clearly. We encourage you to have it reviewed by your own solicitor if you wish — transparency is important to us.</p>
+            <p style="margin-top: 0.75rem;">The agreement covers the rent amount, payment dates, duration (typically 3–5 years), responsibilities, break clauses, and what happens at the end of the agreement.</p>
+          </div>
+        </div>
+        <div style="display: grid; grid-template-columns: 80px 1fr; gap: 2rem; align-items: start;">
+          <div style="text-align: center;">
+            <div style="width: 64px; height: 64px; background: var(--navy); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; color: var(--gold);">4</div>
+          </div>
+          <div>
+            <h3 style="margin-bottom: 0.75rem;">Your rent arrives — every month</h3>
+            <p>From your agreed start date, your guaranteed rent is paid on the same date each month. We handle everything else. You don't need to call us, check in, or manage anything. Your only job is to check your bank account.</p>
+            <p style="margin-top: 0.75rem;">We provide clear communication throughout the agreement and are always available if you have questions. But our goal is to give you a genuinely hands-off experience.</p>
+          </div>
+        </div>
+      </div>
+      <div style="text-align: center; margin-top: 3rem;">
+        <a href="#" class="btn btn-primary" onclick="showSection('contact'); return false;">Start the process today →</a>
+      </div>
+    </div>
+  </section>
+</div><!-- /howitworks-page -->
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- ABOUT PAGE                                               -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<div id="about-page" class="page-section">
+  <section class="hero" style="padding: 5rem 0;">
+    <div class="container-narrow" style="text-align: center;">
+      <span class="eyebrow">About Dobson Homes</span>
+      <h1 style="color: var(--white); margin-bottom: 1rem;">Built for landlords who want less hassle, not less income.</h1>
+      <p class="hero-sub" style="max-width: 520px; margin: 0 auto;">We exist for one reason: to give landlords a genuinely passive income from their property, without compromise.</p>
+    </div>
+  </section>
+  <section class="about">
+    <div class="container">
+      <div class="about-layout">
+        <div class="about-visual">
+          <div class="about-avatar">DH</div>
+          <div class="about-name">Dobson Homes Limited</div>
+          <div class="about-role">Property Solutions Company</div>
+          <p style="font-size: 0.9rem; color: var(--text-mid);">Established to solve a real problem for landlords across Lincolnshire and Nottinghamshire.</p>
+          <div class="about-creds">
+            <div class="cred-item"><div class="cred-dot"></div>ICO Registered — Data protection compliant</div>
+            <div class="cred-item"><div class="cred-dot"></div>PRS Member — Property Redress Scheme</div>
+            <div class="cred-item"><div class="cred-dot"></div>Written, legally reviewed agreements</div>
+            <div class="cred-item"><div class="cred-dot"></div>Compliant serviced accommodation operation</div>
+            <div class="cred-item"><div class="cred-dot"></div>Professional cleaning & maintenance standards</div>
+          </div>
+        </div>
+        <div class="about-content">
+          <span class="eyebrow">Our story</span>
+          <h2>Why we started Dobson Homes</h2>
+          <p>Dobson Homes was created because too many landlords are stuck in the same exhausting cycle — chasing rent, fielding calls at all hours, navigating disputes, and spending money they hadn't budgeted for.</p>
+          <p>The traditional letting model wasn't designed for landlords who want income, not a second job. And for retired landlords or those with growing portfolios, the time and energy demanded by tenant management becomes unsustainable.</p>
+          <p>We created Dobson Homes to offer something genuinely different: a long-term agreement where we take on the property, pay the rent, and let you get on with your life.</p>
+          <p>We're building this business on transparency and professional standards — not on overpromising or inflated rent figures. When we make you an offer, it's one we can sustain. When we sign an agreement, we honour it.</p>
+          <p>Dobson Homes is a new business, and we're proud of that. It means we're building our reputation from the ground up — earning every landlord's trust through clear communication, reliable payments, and professional property care.</p>
+          <div class="mission-box">
+            "Our goal is to be the property partner you never have to think about — because everything is running exactly as agreed."
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section style="background: var(--off-white); padding: 4rem 0;">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Our commitments</span>
+        <h2>How we operate</h2>
+      </div>
+      <div class="props-grid" style="margin-top: 2.5rem;">
+        <div class="prop-card">
+          <div class="prop-icon">🤝</div>
+          <h3>Transparent agreements</h3>
+          <p>Every agreement is written clearly. We explain every clause. You are encouraged to take legal advice. We have nothing to hide.</p>
+        </div>
+        <div class="prop-card">
+          <div class="prop-icon">📱</div>
+          <h3>Responsive communication</h3>
+          <p>We respond within 2 hours during business hours. You'll never be left waiting for an answer or wondering what's happening with your property.</p>
+        </div>
+        <div class="prop-card">
+          <div class="prop-icon">🛡</div>
+          <h3>Professional standards</h3>
+          <p>We are ICO registered, PRS members, and operate to strict compliance standards. We manage properties correctly — not just conveniently.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div><!-- /about-page -->
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- FAQ PAGE                                                 -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<div id="faq-page" class="page-section">
+  <section class="hero" style="padding: 4rem 0;">
+    <div class="container-narrow" style="text-align: center;">
+      <span class="eyebrow">FAQs</span>
+      <h1 style="color: var(--white); margin-bottom: 1rem;">Landlord questions, answered clearly</h1>
+      <p class="hero-sub" style="max-width: 520px; margin: 0 auto;">We believe in transparency. Here are the most common questions we receive — with straightforward answers.</p>
+    </div>
+  </section>
+  <section class="faq">
+    <div class="container">
+      <div style="display: flex; flex-direction: column; gap: 0.75rem; max-width: 860px; margin: 0 auto;">
+
+        <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)">What exactly is guaranteed rent? <span class="faq-arrow">▾</span></button><div class="faq-answer">Guaranteed rent means Dobson Homes leases your property directly and pays you a fixed monthly rent — regardless of whether the property is occupied. We become your tenant, and your income is agreed and fixed for the duration of the contract.</div></div>
+
+        <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)">How long are the agreements? <span class="faq-arrow">▾</span></button><div class="faq-answer">Our agreements typically run for 3–5 years. We prefer longer agreements because they give you income certainty and allow us to invest properly in the property. Shorter arrangements can be discussed depending on your circumstances.</div></div>
+
+        <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)">Will I receive market rent? <span class="faq-arrow">▾</span></button><div class="faq-answer">Our guaranteed rent is typically slightly below market rate, but the comparison isn't straightforward. When you account for void periods, letting agent fees, maintenance costs, and the time you spend managing a property, many landlords find our guaranteed income works out favourably. You're also gaining complete peace of mind.</div></div>
+
+        <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)">Do I need to do anything to my property before we start? <span class="faq-arrow">▾</span></button><div class="faq-answer">Your property needs to meet our quality standards for serviced accommodation. During our visit, we'll advise on anything that needs addressing. In some cases, we'll support light refurbishment to prepare the property — we'll always discuss this with you upfront.</div></div>
+
+        <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)">What types of property do you take? <span class="faq-arrow">▾</span></button><div class="faq-answer">We're primarily interested in houses and apartments in good condition across Lincolnshire and Nottinghamshire. Properties should be well-located and suitable for serviced accommodation use. Contact us to discuss your specific property and we'll let you know quickly if it's something we can work with.</div></div>
+
+        <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)">Who stays in my property? <span class="faq-arrow">▾</span></button><div class="faq-answer">We host business travellers, corporate guests, contractors, and professionals on short to medium stays. These guests are booked through reputable platforms and are screened accordingly. They typically treat properties with considerably more care than long-term residential tenants.</div></div>
+
+        <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)">What happens if there's damage to my property? <span class="faq-arrow">▾</span></button><div class="faq-answer">We take full responsibility for the management of your property during the agreement, including maintaining it to a high standard. Any damage caused by guests is our responsibility to address. We have processes in place to manage this — it is not your concern.</div></div>
+
+        <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)">Do I need a specific type of mortgage? <span class="faq-arrow">▾</span></button><div class="faq-answer">This is an important question. You should check with your mortgage lender or broker whether your current mortgage permits the use of the property for serviced accommodation. Many buy-to-let mortgages do permit this, but you must confirm. We recommend speaking to a specialist broker before proceeding.</div></div>
+
+        <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)">Do I need to tell my insurance provider? <span class="faq-arrow">▾</span></button><div class="faq-answer">Yes. You should notify your buildings and contents insurer about the change of use. Your existing landlord policy may not cover serviced accommodation. We can advise on suitable specialist insurance products if needed.</div></div>
+
+        <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)">Do I need planning permission for serviced accommodation? <span class="faq-arrow">▾</span></button><div class="faq-answer">In most cases, no — particularly for shorter stays. However, rules vary by council and property type. We will discuss the regulatory position for your specific property and location before we proceed, ensuring everything is legally sound.</div></div>
+
+        <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)">Who handles compliance and certificates? <span class="faq-arrow">▾</span></button><div class="faq-answer">We coordinate compliance throughout the agreement. This includes arranging gas safety certificates, EICRs, fire safety measures, and any other required documentation. We keep records and communicate clearly with you so you always know your property is legally compliant.</div></div>
+
+        <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)">Can I access my property during the agreement? <span class="faq-arrow">▾</span></button><div class="faq-answer">As we are the legal tenant, access must be arranged in advance and in line with the terms of the agreement, just as it would be with any tenant. We'll always accommodate reasonable requests. In practice, you are unlikely to need or want access during the agreement — that's rather the point.</div></div>
+
+        <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)">What happens at the end of the agreement? <span class="faq-arrow">▾</span></button><div class="faq-answer">At the end of the agreed term, the property is returned to you in the condition agreed at the start. We'll discuss well in advance whether you'd like to renew, renegotiate, or conclude the arrangement. We aim to give you as much notice as possible so you have time to plan.</div></div>
+
+        <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)">Can I sell my property during the agreement? <span class="faq-arrow">▾</span></button><div class="faq-answer">Our agreements include clear break clauses to accommodate changing circumstances. If you wish to sell during the agreement, we'll discuss the situation openly and find a practical solution. We are not here to create obstacles for our landlords.</div></div>
+
+        <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)">What if I have more than one property? <span class="faq-arrow">▾</span></button><div class="faq-answer">We actively welcome portfolio landlords. If you own multiple properties, we'd be very interested in discussing how we could work across your entire portfolio, simplifying your management and securing guaranteed income across all your assets.</div></div>
+
+        <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)">What if I'm a retired landlord? <span class="faq-arrow">▾</span></button><div class="faq-answer">Retired landlords are exactly the kind of partners we're built for. If you've reached a point where managing tenants is no longer something you want to do — but you still need the income — our model gives you the income without any of the work. Many of our landlords are in exactly this position.</div></div>
+
+        <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)">How quickly can you make an offer? <span class="faq-arrow">▾</span></button><div class="faq-answer">We typically visit within a few days of first contact and provide a written offer within 24–48 hours of the visit. If everything aligns and you're ready to proceed, an agreement can be in place within a week or two.</div></div>
+
+        <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)">Is Dobson Homes a letting agent? <span class="faq-arrow">▾</span></button><div class="faq-answer">No. We are not a letting agency. We don't find tenants for your property or charge management fees. We lease your property directly — we become your tenant. That's a fundamentally different relationship and a much better one for landlords seeking certainty.</div></div>
+
+        <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)">Are you registered with any regulatory bodies? <span class="faq-arrow">▾</span></button><div class="faq-answer">Yes. Dobson Homes is registered with the ICO (Information Commissioner's Office) for data protection purposes, and we are members of the Property Redress Scheme (PRS). We operate to professional standards and are committed to full regulatory compliance.</div></div>
+
+        <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)">What areas do you currently operate in? <span class="faq-arrow">▾</span></button><div class="faq-answer">We currently accept properties across Lincolnshire (including Lincoln, Grantham, Boston, Spalding, and surrounding areas) and Nottinghamshire (including Nottingham, Newark, Mansfield, Worksop, and surrounding areas). We're planning to expand into Yorkshire and beyond.</div></div>
+
+        <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)">What if I have concerns about a new company? <span class="faq-arrow">▾</span></button><div class="faq-answer">It's a reasonable concern and we respect it. We are a new business, and we think that transparency is the right response to that. We provide written agreements, encourage legal review, hold professional memberships, and are fully registered with the ICO. We're building our reputation through every landlord relationship we enter — and we take that seriously.</div></div>
+
+        <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)">Do you pay a deposit? <span class="faq-arrow">▾</span></button><div class="faq-answer">This depends on the individual agreement and is something we discuss openly during the negotiation process. Our priority is to structure an arrangement that both parties are comfortable with and that reflects the agreement clearly.</div></div>
+
+        <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)">How do I know rent will actually be paid? <span class="faq-arrow">▾</span></button><div class="faq-answer">We understand this is the central concern. Our written agreement specifies the payment date and amount. We are a registered company with professional memberships and clear accountability. If at any point you have concerns, we are reachable and responsive — we believe direct communication is the best protection.</div></div>
+
+        <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)">Can I speak to someone before committing to anything? <span class="faq-arrow">▾</span></button><div class="faq-answer">Absolutely. We encourage it. Call us, WhatsApp us, or complete our enquiry form and we'll arrange a call at your convenience. There is no obligation, no pressure, and no sales tactics. We want to answer your questions honestly so you can make the right decision for your property.</div></div>
+
+        <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)">What is the free compliance checklist? <span class="faq-arrow">▾</span></button><div class="faq-answer">We've created a practical checklist covering the key compliance requirements for UK landlords — including certificates, safety checks, deposit rules, and licensing. It's free and sent directly to your inbox. Many landlords find it highlights something they'd missed. You can download it <a href="#" onclick="showSection('checklist'); return false;" style="color: var(--gold);">here</a>.</div></div>
+
+      </div>
+      <div style="text-align: center; margin-top: 3rem;">
+        <p style="margin-bottom: 1rem;">Still have a question?</p>
+        <a href="#" class="btn btn-primary" onclick="showSection('contact'); return false;">Contact us directly →</a>
+      </div>
+    </div>
+  </section>
+</div><!-- /faq-page -->
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- CHECKLIST PAGE                                           -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<div id="checklist-page" class="page-section">
+  <section class="hero" style="padding: 5rem 0;">
+    <div class="container-narrow" style="text-align: center;">
+      <span class="eyebrow">Free Download</span>
+      <h1 style="color: var(--white); margin-bottom: 1rem;">Free Landlord Compliance Checklist</h1>
+      <p class="hero-sub" style="max-width: 500px; margin: 0 auto;">17 compliance checks every UK landlord should have in place. Download your copy free — no catch.</p>
+    </div>
+  </section>
+  <section style="background: var(--off-white);">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start;">
+        <div>
+          <span class="eyebrow">What's inside</span>
+          <h2 style="margin-bottom: 1.5rem;">What the checklist covers</h2>
+          <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+            <div class="manage-item"><div class="manage-bullet"></div><div><strong>Gas safety</strong><span>Annual gas safety certificate requirements and record-keeping</span></div></div>
+            <div class="manage-item"><div class="manage-bullet"></div><div><strong>Electrical safety</strong><span>EICR requirements, frequency, and who must receive copies</span></div></div>
+            <div class="manage-item"><div class="manage-bullet"></div><div><strong>Energy performance</strong><span>EPC requirements, minimum ratings, and upcoming changes</span></div></div>
+            <div class="manage-item"><div class="manage-bullet"></div><div><strong>Fire safety</strong><span>Smoke alarms, CO detectors, escape routes, and risk assessments</span></div></div>
+            <div class="manage-item"><div class="manage-bullet"></div><div><strong>Legionella</strong><span>Risk assessment requirements and frequency</span></div></div>
+            <div class="manage-item"><div class="manage-bullet"></div><div><strong>Deposit protection</strong><span>Scheme requirements, timescales, and prescribed information</span></div></div>
+            <div class="manage-item"><div class="manage-bullet"></div><div><strong>Right to rent checks</strong><span>Legal requirements and record-keeping obligations</span></div></div>
+            <div class="manage-item"><div class="manage-bullet"></div><div><strong>HMO licensing</strong><span>When licensing applies and how to check your requirement</span></div></div>
+            <div class="manage-item"><div class="manage-bullet"></div><div><strong>+ 9 more checks inside</strong><span>Covering insurance, selective licensing, and more</span></div></div>
+          </div>
+        </div>
+        <div class="lm-form" style="margin-top: 0;">
+          <h3>Download your free checklist</h3>
+          <p>Enter your details below and we'll send it to your inbox immediately.</p>
+          <form onsubmit="handleFormSubmit(event, 'checklist-page')">
+            <div class="hero-form-group">
+              <label>Your full name</label>
+              <input type="text" placeholder="John Smith" required>
+            </div>
+            <div class="hero-form-group">
+              <label>Email address</label>
+              <input type="email" placeholder="john@example.com" required>
+            </div>
+            <div class="hero-form-group">
+              <label>Phone number (optional)</label>
+              <input type="tel" placeholder="07700 000000">
+            </div>
+            <div class="hero-form-group">
+              <label>How many properties do you own?</label>
+              <select>
+                <option value="">Select...</option>
+                <option>1 property</option>
+                <option>2–5 properties</option>
+                <option>6–10 properties</option>
+                <option>11+ properties</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary form-submit">Send me the checklist →</button>
+          </form>
+          <p class="form-disclaimer">We are ICO registered. Your data is never shared. You can unsubscribe at any time.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div><!-- /checklist-page -->
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- CONTACT PAGE                                             -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<div id="contact-page" class="page-section">
+  <section class="hero" style="padding: 4rem 0;">
+    <div class="container-narrow" style="text-align: center;">
+      <span class="eyebrow">Get in touch</span>
+      <h1 style="color: var(--white); margin-bottom: 1rem;">Let's talk about your property</h1>
+      <p class="hero-sub" style="max-width: 460px; margin: 0 auto;">No sales scripts. No pressure. Just a clear, honest conversation about whether we're the right fit for your property.</p>
+    </div>
+  </section>
+  <section class="contact">
+    <div class="container">
+      <div class="contact-layout">
+        <div class="contact-info">
+          <span class="eyebrow">Ways to reach us</span>
+          <h2>Choose how you'd like to contact us</h2>
+          <p>We respond to all enquiries within 2 hours during business hours. WhatsApp is often the fastest option if you want a quick reply.</p>
+          <div class="contact-options">
+            <a href="tel:+447700000000" class="contact-option">
+              <div class="contact-icon phone">📞</div>
+              <div class="contact-option-text">
+                <strong>Call us directly</strong>
+                <span>Monday–Friday, 9am–6pm</span>
+              </div>
+            </a>
+            <a href="https://wa.me/447700000000?text=Hi%20Dobson%20Homes%2C%20I%27d%20like%20to%20discuss%20my%20property." target="_blank" class="contact-option">
+              <div class="contact-icon wa">💬</div>
+              <div class="contact-option-text">
+                <strong>WhatsApp — quick & easy</strong>
+                <span>Often the fastest way to reach us</span>
+              </div>
+            </a>
+            <a href="mailto:hello@dobsonhomes.co.uk" class="contact-option">
+              <div class="contact-icon email">✉</div>
+              <div class="contact-option-text">
+                <strong>Email us</strong>
+                <span>hello@dobsonhomes.co.uk</span>
+              </div>
+            </a>
+          </div>
+          <div style="margin-top: 2rem; padding: 1.5rem; background: var(--gold-pale); border-radius: var(--radius-md); border: 1px solid rgba(196,154,60,0.25);">
+            <p style="font-size: 0.85rem; font-weight: 600; color: var(--navy); margin-bottom: 0.5rem;">📋 Don't forget your free checklist</p>
+            <p style="font-size: 0.85rem; margin-bottom: 1rem;">Download our free Landlord Compliance Checklist while you're here.</p>
+            <a href="#" onclick="showSection('checklist'); return false;" style="font-size: 0.875rem; font-weight: 600; color: var(--gold); text-decoration: none;">Download free checklist →</a>
+          </div>
+        </div>
+        <div class="contact-form-card">
+          <h3>Send us an enquiry</h3>
+          <p>Tell us about your property and we'll get back to you with a no-obligation guaranteed rent estimate.</p>
+          <form onsubmit="handleFormSubmit(event, 'contact-form')">
+            <div class="form-row">
+              <div class="hero-form-group">
+                <label>First name</label>
+                <input type="text" placeholder="John" required>
+              </div>
+              <div class="hero-form-group">
+                <label>Last name</label>
+                <input type="text" placeholder="Smith" required>
+              </div>
+            </div>
+            <div class="hero-form-group">
+              <label>Phone number</label>
+              <input type="tel" placeholder="07700 000000" required>
+            </div>
+            <div class="hero-form-group">
+              <label>Email address</label>
+              <input type="email" placeholder="john@example.com" required>
+            </div>
+            <div class="hero-form-group">
+              <label>Property address or area</label>
+              <input type="text" placeholder="e.g. Lincoln, Nottingham, Newark...">
+            </div>
+            <div class="form-row">
+              <div class="hero-form-group">
+                <label>Property type</label>
+                <select>
+                  <option value="">Select...</option>
+                  <option>House</option>
+                  <option>Flat / Apartment</option>
+                  <option>Bungalow</option>
+                  <option>HMO</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="hero-form-group">
+                <label>Bedrooms</label>
+                <select>
+                  <option value="">Select...</option>
+                  <option>Studio</option>
+                  <option>1 bed</option>
+                  <option>2 bed</option>
+                  <option>3 bed</option>
+                  <option>4+ bed</option>
+                </select>
+              </div>
+            </div>
+            <div class="hero-form-group">
+              <label>Anything else you'd like to tell us?</label>
+              <textarea placeholder="e.g. current rental income, mortgage type, timeline..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary form-submit">Send my enquiry →</button>
+          </form>
+          <p class="form-disclaimer">We'll respond within 2 business hours. No obligation, no pressure. ICO Registered — your data is safe with us.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div><!-- /contact-page -->
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- FOOTER (shared)                                          -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand">Dobson <span>Homes</span></div>
+        <p class="footer-desc">Guaranteed rent for landlords across Lincolnshire and Nottinghamshire. Long-term agreements, professional management, and income you can rely on.</p>
+        <div class="footer-compliance">
+          <div class="compliance-badge"><div class="compliance-dot"></div> ICO Registered</div>
+          <div class="compliance-badge"><div class="compliance-dot"></div> PRS Member</div>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="#" onclick="showSection('guaranteed'); return false;">Guaranteed Rent</a>
+        <a href="#" onclick="showSection('howitworks'); return false;">How It Works</a>
+        <a href="#" onclick="showSection('home'); return false;">Property Management</a>
+        <a href="#" onclick="showSection('checklist'); return false;">Compliance Checklist</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="#" onclick="showSection('about'); return false;">About Us</a>
+        <a href="#" onclick="showSection('faq'); return false;">FAQ</a>
+        <a href="#" onclick="showSection('contact'); return false;">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="tel:+447700000000">📞 Call us</a>
+        <a href="https://wa.me/447700000000" target="_blank">💬 WhatsApp</a>
+        <a href="mailto:hello@dobsonhomes.co.uk">✉ Email</a>
+        <a href="#" onclick="showSection('contact'); return false;">Enquiry form</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2024 Dobson Homes Limited. Registered in England & Wales.</span>
+      <span>
+        <a href="#" style="margin-right: 1rem;">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- SUCCESS MODAL                                            -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<div id="success-modal" style="display:none; position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 999; align-items: center; justify-content: center;">
+  <div style="background: var(--white); border-radius: var(--radius-lg); padding: 3rem; max-width: 440px; width: 90%; text-align: center; box-shadow: var(--shadow-elevated);">
+    <div style="width: 64px; height: 64px; background: var(--success-bg); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-size: 1.5rem;">✓</div>
+    <h3 style="color: var(--navy); margin-bottom: 0.75rem; font-size: 1.4rem;">Thank you!</h3>
+    <p id="modal-message" style="margin-bottom: 2rem; font-size: 0.95rem;">We'll be in touch within 2 business hours.</p>
+    <div style="display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap;">
+      <button onclick="closeModal()" class="btn btn-dark">Close</button>
+      <a href="https://wa.me/447700000000" class="btn btn-whatsapp" target="_blank">💬 WhatsApp us instead</a>
+    </div>
+  </div>
+</div>
+
+<script>
+  function showSection(id) {
+    document.querySelectorAll('.page-section').forEach(s => {
+      s.classList.remove('active');
+      s.style.display = 'none';
+    });
+    const target = document.getElementById(id + '-page');
+    if (target) {
+      target.style.display = 'block';
+      target.classList.add('active');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  }
+
+  function toggleMobile() {
+    document.getElementById('mobile-menu').classList.toggle('open');
+  }
+
+  function toggleFaq(btn) {
+    const item = btn.closest('.faq-item');
+    item.classList.toggle('open');
+  }
+
+  function handleFormSubmit(e, type) {
+    e.preventDefault();
+    const modal = document.getElementById('success-modal');
+    const msg = document.getElementById('modal-message');
+    if (type === 'checklist' || type === 'checklist-page') {
+      msg.textContent = "Your compliance checklist is on its way to your inbox. We'll also be in touch shortly.";
+    } else if (type === 'contact-form') {
+      msg.textContent = "We've received your enquiry and will be in touch within 2 business hours.";
+    } else {
+      msg.textContent = "We've received your request and will contact you with a guaranteed rent offer shortly.";
+    }
+    modal.style.display = 'flex';
+    e.target.reset();
+  }
+
+  function closeModal() {
+    document.getElementById('success-modal').style.display = 'none';
+  }
+
+  // Close modal on backdrop click
+  document.getElementById('success-modal').addEventListener('click', function(e) {
+    if (e.target === this) closeModal();
+  });
+
+  // Initialise home page
+  showSection('home');
+</script>
+
+</body>
+</html>
